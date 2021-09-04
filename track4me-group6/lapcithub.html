@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSTS | PAGE</title>
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="./assets/images/favicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <!-- fontawesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5/css/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- chat bot -->
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "d009f7dc-b8e0-4ffb-9e11-ead79fb19b38", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "3b904753-9221-47ad-af7f-ab9e21e6c776", // The ID of your service instance.
+        onLoad: function (instance) {
+          instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </head>
+  <body>
+    <section>
+      <!-- contact us begins here -->
+      <section class="bot-contact">
+        <div class="container mt-2">
+          <p>Contact Us: Call or email</p>
+        </div>
+      </section>
+      <!-- contact us ends here -->
+      <!-- nav begins here -->
+      <nav class="navbar navbar-expand-lg nav-live">
+        <div class="container">
+          <a class="navbar-brand" href="home.html"
+            ><img
+              src="./assets/images/logo.png"
+              alt="logo"
+              width="135"
+              height="35"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link px-3" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="lifeUpdate.html">Live Updates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="post.html">Post Feeds</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="comingsoon.html">BRT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 current" href="accident&causalty.html"
+                  >Accidents&Casualties</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 current LAPCiTHub" href="lapcithub.html"
+                  >LAPCiTHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav ends here -->
+    </section>
+    <section>
+      <div class="container">
+        <div>
+          <img
+            src="./assets/images/Home.png"
+            class="img-responsive img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- footer starts -->
+    <section class="bg-white">
+      <hr />
+      <footer>
+        <p class="mt-3">
+          copyright | Disclaimer | Privacy | Right to information |
+          Accessibility | Terms | Notices
+        </p>
+        <p>&copy;Track4Me 2021</p>
+      </footer>
+    </section>
+
+    <!-- scripts -->
+    <script src="./assets/bootstrap-5/js/bootstrap.min.js"></script>
+  </body>
+</html>

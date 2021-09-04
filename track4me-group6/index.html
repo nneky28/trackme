@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track4Me</title>
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="./assets/images/favicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+        <!-- chat bot -->
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "d009f7dc-b8e0-4ffb-9e11-ead79fb19b38", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "3b904753-9221-47ad-af7f-ab9e21e6c776", // The ID of your service instance.
+        onLoad: function (instance) {
+          instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
+</head>
+<body>
+    <!-- nav begins here -->
+      <nav class="navbar navbar-expand-lg nav-live">
+        <div class="container">
+          <a class="navbar-brand" href="home.html"
+            ><img
+              src="./assets/images/logo.png"
+              alt="logo"
+              width="135"
+              height="35"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link px-3" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="lifeUpdate.html">Live Updates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 current" href="post.html">Post Feeds</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="comingsoon.html">BRT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="accident&causalty.html"
+                  >Accidents&Casualties</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 LAPCiTHub" href="#">LAPCiTHub</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav ends here -->
+    <header>
+            <div class="hero-image">
+                <div class="logo"><img src="./assets/images/favicon-removebg-preview.png" alt=""></div>
+                <div class="hero-text">
+                 <h3 class="hthree">Welcome to Track 4 Me</h3>
+                 <br>
+                 <br>
+                 <p class="pee">Get unlimited updates about traffic situation anywhere in Lagos. <br>Find information about accidents and casualties. <br>Join a community, join the conversation.</p>
+                </div> 
+           </div>
+    </header>
+    <!-- <br>
+    <br> -->
+
+    <!-- Map -->
+
+    <section class="mb-5">
+        <div class="container" style="transform: translateY(-45px);">
+            <div class="row">
+             <div class="background1">
+                 <div class="text">
+                    <h4 class="hfouur">Get updates of Traffic Jams on your route and <br>plan ahead</h4>
+                    <br>
+                    <a class="aaa text-white text-decoration-none" href="#">Go to Live updates</a> 
+                 </div>
+                  
+                 <div class="paste rounded">
+                    <div class="map" style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=lagos,%20nigeria+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/draw-radius-circle-map/">Circle area map</a></div>
+                 </div>
+             </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Map -->
+
+
+    <!-- Card Display One-->
+
+    <section class="container my-5">
+       <div class="row text-center align-items-center">
+          <div class="col-lg-5">
+ <div class="division1">
+                    <div class="one">
+                        <h5 class="hfive1">Share your current traffic updates <br>with fellow LAPCiTers</h5>
+                       
+                        <p class="text1 text-white">Help Others Help You!</p>
+                      
+                        <button class="btnn"><a href="post.html">POST AN UPDATE</a></button>
+                       </div>
+          </div>
+          </div>
+
+          <div class="col-lg-2 align-items-center d-flex justify-content-center">
+<div class="division0">
+                        
+                    </div> 
+          </div>
+
+            <div class="col-lg-5">
+           <div class="bgimage">
+
+                    </div>
+          </div>
+
+       </div>
+    </section>
+
+     <!-- End of Card Display -->
+
+
+
+
+ <!-- Card Display Two-->
+
+    <section class="container my-5">
+       <div class="row text-center align-items-center">
+          <div class="col-lg-5">
+ <div class="bgimagee"></div> 
+          </div>
+
+            <div class="col-lg-2 align-items-center d-flex justify-content-center">
+<div class="division0">
+                        
+                    </div> 
+          </div>
+
+            <div class="col-lg-5">
+              <div class="division2">
+                                     <div class="two">
+                          <h5 class="hfive2">How about you let someone else take the <br> wheel for a change?</h5>
+                          <br>
+                          <p class="text2 text-white">Opt for a faster route with BRT Buses</p>
+                         
+                          <button class="btnn"><a href="comingsoon.html">BRT</a></button> 
+                         </div>
+                      
+                     </div>
+          </div>
+
+       </div>
+    </section>
+
+     <!-- End of Card Display Two -->
+
+
+
+
+
+
+      <!-- Card Display Three-->
+
+    <section class="container my-5">
+       <div class="row text-center align-items-center">
+          <div class="col-lg-5">
+ <div class="division3">
+                    <div class="one">
+                         <h5 class="hfive1">LAPCitHUB</h5>
+                      <br>
+                      <p class="text1 text-white">If you want access to more traffic gist and suggestions on how to avoid traffic and casualties</p>
+                      <br>
+                      <button class="btnn"><a href="#">LAPCitHUB</a> </button>
+                       </div>
+          </div>
+          </div>
+
+           <div class="col-lg-2 align-items-center d-flex justify-content-center">
+<div class="division0">
+                        
+                    </div> 
+          </div>
+
+            <div class="col-lg-5">
+           <div class="bgimageee">
+
+                    </div>
+          </div>
+
+       </div>
+    </section>
+
+     <!-- End of Card Display Three-->
+
+
+
+
+ <!-- Card Display four-->
+
+    <section class="container my-5">
+       <div class="row text-center align-items-center">
+          <div class="col-lg-5">
+  <div class="bgimageeee"></div> 
+          </div>
+
+           <div class="col-lg-2 align-items-center d-flex justify-content-center">
+<div class="division0">
+                        
+                    </div> 
+          </div>
+
+            <div class="col-lg-5">
+              <div class="division4">
+                                     <div class="two">
+                            <h5 class="hfive2">We cannot stop accidents but we can<br>reduce our risk exposure to them</h5>
+                      <br>
+                      <p class="text2 text-white">Help Others Help You!</p>
+                      <br>
+                      <button class="btnn"><a href="accident&causalty.html">Accidents& <br>Casualties</a> </button>
+                         </div>
+                      
+                     </div>
+          </div>
+
+       </div>
+    </section>
+
+    <!-- End of Card Display Four -->
+         <hr />
+    <!-- footer starts -->
+    <section>
+      <footer>
+        <p>
+          copyright | Disclaimer | Privacy | Right to information |
+          Accessibility | Terms | Notices
+        </p>
+        <p>&copy;Track4Me 2021</p>
+      </footer>
+    </section>   
+          
+      </section>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+</script>
+</body>
+</html>
